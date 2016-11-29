@@ -1,2 +1,2 @@
-# samrimington.github.io
-My personal webpage
+# My personal webpage
+Preview at: http://samrimington.github.io
