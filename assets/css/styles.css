@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha');
+
+
 body {
 	background-image: url("../../images/bg.jpg");
 	background-size: cover;
 	color: white;
-	font-family: "Arial", sans;
+	font-family: 'Neucha', cursive;
+    line-height: 1.5;
 	margin: auto;
 	width: 70%;
 }
@@ -18,4 +22,26 @@ body {
 	border-radius: 50%;
 	display: block;
 	margin: auto;
+}
+
+.post {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    margin-bottom: 5%;
+    padding: 40px;
+}
+
+.links {
+    padding: 0 40px 5%;
+}
+
+.links a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.links img {
+    vertical-align: middle;
 }
