@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+    <div class="hero">
+        <img 
+            class="avatar"
+            src="/images/avatar.jpg"
+            alt="My face"
+            onmouseover="glassesOn(this)"
+            onmouseout="glassesOff(this)"
+        />
+        <h1>Sam Rimington</h1>
+        <h2>
+            Software Engineering intern at <a class="hiddenLink" href="https://www.bsquare.com/">Bsquare</a>.<br>
+            <a class="hiddenLink" href="https://www.york.ac.uk/">University of York</a> CS student.<br>
+            Occasional <a class="hiddenLink" href="https://en.wikipedia.org/wiki/Idiot">idiot</a>.
+        </h2>
+    </div>
+    {% if site.posts.size > 0 %}{% for post in site.posts %}
+    <div class="post">
+        <h2>{{ post.title }}</h2>
+        <small>{{ post.date }}</small>
+        {{ post.content }}
+    </div>
+    {% endfor %}{% endif %}
+    <div class="links">
+        <h2>Links</h2>
+        <a href="https://github.com/samrimington">
+            <img alt="GitHub" src="images/github_icon.png" />
+            samrimington
+        </a>
+        <a href="https://www.linkedin.com/in/samrimington">
+            <img alt="LinkedIn" src="images/linkedin_icon.png" />
+            samrimington
+        </a>
+        <a href="https://twitter.com/sam_rimington">
+            <img alt="Twitter" src="images/twitter_icon.png" />
+            @sam_rimington
+        </a>
+    </div>
+
+    <script src="/assets/js/home.js"></script>
