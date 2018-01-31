@@ -17,13 +17,10 @@ layout: default
             Occasional <a class="hiddenLink" href="https://en.wikipedia.org/wiki/Idiot">idiot</a>.
         </h2>
     </div>
-    {% if site.posts.size > 0 %}{% for post in site.posts %}
-    <div class="post">
-        <h2>{{ post.title }}</h2>
-        <small>{{ post.date }}</small>
+    {% for post in site.posts %}{% if post.categories contains 'home' %}<div class="post">
+        <h2>{{ post.title | escape }}</h2>
         {{ post.content }}
-    </div>
-    {% endfor %}{% endif %}
+    </div>{% endif %}{% endfor %}
     <div class="links">
         <h2>Links</h2>
         <a href="https://github.com/samrimington">
@@ -39,5 +36,4 @@ layout: default
             @sam_rimington
         </a>
     </div>
-
     <script src="/assets/js/home.js"></script>

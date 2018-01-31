@@ -2,9 +2,8 @@
 layout: default
 ---
 
-    <article>
-        <div class="post">
-            <h1>{{ page.title | escape }}</h1>
-            {{ content }}
-        </div>
-    </article>
+    <div class="post">
+        <h1>{{ page.title | escape }}</h1>
+        <small>{{ page.date | date: '%d %B %Y' }}</small>
+        {{ page.content }}
+    </div>
