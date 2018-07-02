@@ -233,7 +233,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll
   jekyll-feed
   tzinfo-data
 

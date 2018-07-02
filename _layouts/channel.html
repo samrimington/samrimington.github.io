@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
     <h1>{{ page.title | escape }}</h1>
     {% assign titleLowercased = page.title | downcase %}{% assign numberOfPosts = site.posts | where:"category",titleLowercased | size %}<small>{{ numberOfPosts }} {% if numberofPosts > 1 %}posts{% else %}post{% endif %}</small>  
     {{ content }}
