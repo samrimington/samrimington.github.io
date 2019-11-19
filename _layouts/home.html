@@ -9,27 +9,22 @@ layout: default
         />
         <h1>Sam Rimington</h1>
         <h2>
-            Software Engineering intern at <a class="hiddenLink" href="https://www.bsquare.com/">Bsquare</a>.<br>
-            <a class="hiddenLink" href="https://www.york.ac.uk/">University of York</a> CS student.<br>
-            Occasional <a class="hiddenLink" href="https://en.wikipedia.org/wiki/Idiot">idiot</a>.
+            Software engineer at <a href="https://www.reygar.co.uk">Reygar</a>.<br/>
+            Former intern at <a href="https://www.bsquare.com/">Bsquare</a>.<br/>
+            <a href="https://cs.york.ac.uk/">University of York CS</a> graduate.
         </h2>
     </div>
-    {% for post in site.posts %}{% if post.categories contains 'home' %}<div class="post">
-        <h2>{{ post.title | escape }}</h2>
-        {{ post.content }}
-    </div>{% endif %}{% endfor %}
-    <div class="links">
-        <h2>Links</h2>
-        <a href="https://github.com/samrimington">
+    <ul class="links">
+        <li><a href="https://www.github.com/samrimington">
             <img alt="GitHub" src="images/github_icon.png" />
             samrimington
-        </a>
-        <a href="https://www.linkedin.com/in/samrimington">
+        </a></li>
+        <li><a href="https://www.linkedin.com/in/samrimington">
             <img alt="LinkedIn" src="images/linkedin_icon.png" />
             samrimington
-        </a>
-        <a href="https://twitter.com/sam_rimington">
+        </a></li>
+        <li><a href="https://www.twitter.com/samrimington">
             <img alt="Twitter" src="images/twitter_icon.png" />
-            @sam_rimington
-        </a>
-    </div>
+            @samrimington
+        </a></li>
+    </ul>

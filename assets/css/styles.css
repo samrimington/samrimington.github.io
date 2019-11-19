@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Neucha');
+@import url('https://fonts.googleapis.com/css?family=Signika:300');
 
 
 body {
 	background-image: url("../../images/bg.jpg");
 	background-size: cover;
 	color: white;
-	font-family: 'Neucha', cursive;
+	font-family: 'Signika', serif;
     line-height: 1.5;
 	margin: auto;
 	width: 70%;
@@ -41,15 +41,15 @@ h2 {
 	width: 50%;
 }
 
+.hero a {
+    color: rgb(170, 200, 120);
+    text-decoration: none;
+}
+
 .avatar {
 	border-radius: 50%;
 	display: block;
 	margin: auto;
-}
-
-.hiddenLink {
-    color: white;
-    text-decoration: none;
 }
 
 .post {
@@ -61,17 +61,23 @@ h2 {
 }
 
 .links {
-    padding: 0 40px 5%;
+    text-align: center;
+    padding: 0 0 5%;
+    list-style-type: none;
 }
 
-.links a {
+.links li {
+    padding-bottom: 10px;
+}
+
+.links li a {
     color: white;
-    margin-right: 10px;
     text-decoration: none;
 }
 
 .links img {
     vertical-align: middle;
+    padding: 4px;
 }
 
 .flickrSlideshow img {
